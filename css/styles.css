@@ -16,6 +16,13 @@ body {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
+/* логотип хз как  оформить по макету */
+.logo {
+  color: blue;
+}
 
 /* nav */
 .site-nav a {
@@ -31,4 +38,9 @@ ul {
 .auth-nav a:hover,
 .auth-nav a:focus {
   color: rgba(33, 150, 243, 1);
+}
+/* HERO */
+.section-hero {
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 1);
 }
