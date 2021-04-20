@@ -9,9 +9,17 @@
 цвет секции наше команда #F5F4FA;
 
 */
+
+:root {
+  --primary-text-color: rgba(33, 33, 33, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+  --secondary-text-color: rgba(117, 117, 117, 1);
+}
+
 body {
   background-color: #ffffff;
-  color: rgba(33, 33, 33, 1);
+  color: var(--primary-text-color);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 ul {
   list-style: none;
@@ -22,6 +30,20 @@ a {
 /* логотип хз как  оформить по макету */
 .logo {
   color: blue;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
 }
 
 /* nav */
@@ -30,17 +52,77 @@ a {
 }
 .site-nav a:hover,
 .site-nav a:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--accent-color);
 }
+
 .auth-nav a {
   color: rgba(117, 117, 117, 1);
 }
 .auth-nav a:hover,
 .auth-nav a:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--accent-color);
 }
 /* HERO */
 .section-hero {
   background-color: #2f303a;
   color: rgba(255, 255, 255, 1);
+}
+
+.section-hero .titel {
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: rgba(255, 255, 255, 1);
+  background: var(--accent-color);
+}
+/* Наши ценности */
+
+.hiden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.our-list .text-titel {
+  color: var(--secondary-text-color);
+}
+.our-list .titel {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* what we do */
+.section-img .titel {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Наша команда */
+
+.our-team {
+  background: #f5f4fa;
+}
+
+.our-team .title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+.our-team .title-text {
+  color: var(--secondary-text-color);
+}
+.section-footer {
+  background: #2f303a;
 }
