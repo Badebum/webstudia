@@ -55,6 +55,10 @@ a {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 .auth-nav a {
   color: rgba(117, 117, 117, 1);
 }
