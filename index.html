@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    
 </head>
 <body>
     <header>
@@ -48,18 +51,22 @@
         <h2 class="hiden">Наши ценности</h2> <!-- нужно скрыть -->
         <ul class="our-list">
             <li>
+                <img src="./img/our-values/Group1.jpg" alt="рисунок спутника">
                 <h3 class="titel">Внимание к деталям</h3>
                 <p class="text-titel">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li>
+                <img src="./img/our-values/Group2.jpg" alt="рисунок часов">
                 <h3 class="titel">Пунктуальность</h3>
                 <p class="text-titel">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li>
+                <img src="./img/our-values/Group3.jpg" alt="рисунок ноутбука">
                 <h3 class="titel">Планирование</h3>
                 <p class="text-titel">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li>
+                <img src="./img/our-values/Group4.jpg" alt="рисунок космонавта в скафандре">
                 <h3 class="titel">Современные технологии</h3>
                 <p class="text-titel">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -86,12 +93,12 @@
 <!-- Наша команда -->
 <section class="our-team">
     <h2 class="titel">Наша команда</h2>
-<ul>
+<ul class="icon">
     <li>
         <img src="./img/our-team/img-0.jpg" alt="" width="270">
         <h3 class="titel-name">Игорь Демьяненко</h3>
-        <p lang="en" class="title-text">Product Designer</p>
-        <ul class="icon">
+        <p lang="en" class="titel-text">Product Designer</p>
+        <ul>
             <li><a href="" ><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
             <li><a href="" ><img src="./img/icon/Ellipse3.jpg" alt=""></a></li>
             <li><a href="" ><img src="./img/icon/Ellipse1.jpg" alt=""></a></li>
@@ -101,7 +108,7 @@
     <li>
         <img src="./img/our-team/img-1.jpg" alt="" width="270">
         <h3 class="titel-name">Ольга Репина</h3>
-        <p lang="en" class="title-text">Frontend Developer</p>
+        <p lang="en" class="titel-text">Frontend Developer</p>
         <ul>
             <li><a href=""><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
             <li><a href=""><img src="./img/icon/Ellipse3.jpg" alt=""></a></li>
@@ -112,7 +119,7 @@
     <li>
         <img src="./img/our-team/img-2.jpg" alt="" width="270">
         <h3 class="titel-name">Николай Тарасов</h3>
-        <p lang="en" class="title-text">Marketing</p>
+        <p lang="en" class="titel-text">Marketing</p>
         <ul>
             <li><a href=""><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
             <li><a href=""><img src="./img/icon/Ellipse3.jpg" alt=""></a></li>
@@ -123,7 +130,7 @@
     <li>
         <img src="./img/our-team/img-3.jpg" alt="" width="270">
         <h3 class="titel-name">Михаил Ермаков</h3>
-        <p lang="en" class="title-text">UI Designer</p>
+        <p lang="en" class="titel-text">UI Designer</p>
         <ul>
             <li><a href=""><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
             <li><a href=""><img src="./img/icon/Ellipse3.jpg" alt=""></a></li>
@@ -133,9 +140,11 @@
     </li>
 </ul>
 </section>
+
 <!-- постоянные клиенты -->
+
 <section>
-<h2>Постоянные клиенты</h2>
+<h2 class="regular-customers">Постоянные клиенты</h2>
 <ul>
     <li>
         <a href=""><img src="./img/our-partners/logo1.jpg" alt=""> </a>
@@ -170,20 +179,20 @@
 <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
 <address>
     <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
     </ul>
 </address>
-        </div>
+    </div>
 
     <div>
-        <h2> присоединяйтесь</h2>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+        <p class="text-titel"> Присоединяйтесь</p>
+        <ul>
+            <li><a href=""><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/icon/Ellipse3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/icon/Ellipse1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/icon/Ellipse2.jpg" alt=""></a></li>
+        </ul>
         
     </div>
     <div>
