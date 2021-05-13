@@ -25,9 +25,11 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   letter-spacing: 0.03em;
   
-}
+ }
 
-ul {
+.list {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
   }
 
@@ -35,6 +37,7 @@ a {
   text-decoration: none;
 }
 
+/* логотип */
 .logo {
   color: #000000;
   font-family: Raleway;
@@ -42,11 +45,13 @@ a {
   font-size: 26px;
   line-height: 1.19;
 }
-
 .logo .one {
   color: var(--accent-color);
 }
 
+.page-header{
+  background-color: var(--white-color);
+}
 
 /* nav */
 .site-nav a {
@@ -55,8 +60,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  
-}
+ }
+
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-color);
@@ -73,6 +78,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 
 .auth-nav a:hover,
 .auth-nav a:focus {
@@ -92,29 +98,45 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .button {
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-text-color);
   background: var(--button-color);
   font-family: inherit;
-  font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
-  display: flex;
+  line-height: 1.62;
+  font-weight: 500;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 }
 
-.button.primary {
+/* .button.primary {
   color: var(--primary-text-color);
   background: var(--button-color);
-}
+} */
 
-.button.secondary {
+.button.hero {
+  min-width: 200px;
+  display: inline-block;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: bold;
+
   color: var(--white-color);
   background-color: var(--accent-color);
+
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 /* Наши ценности */

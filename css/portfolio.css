@@ -4,11 +4,6 @@
   background-color: var(--accent-color);
 }
 
-.button {
-  font-weight: 500;
-  line-height: 1.62;
-}
-
 .card-work .title {
   color: var(--primary-text-color);
   font-weight: bold;
