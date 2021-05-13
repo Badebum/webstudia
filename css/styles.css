@@ -89,13 +89,13 @@ a {
 .section-hero {
   background-color: #2f303a;
   color: var(--white-color);
+  text-align: center;
 }
 
 .section-hero .titel {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -117,11 +117,6 @@ a {
   letter-spacing: 0.03em;
 }
 
-/* .button.primary {
-  color: var(--primary-text-color);
-  background: var(--button-color);
-} */
-
 .button.hero {
   min-width: 200px;
   display: inline-block;
@@ -134,7 +129,7 @@ a {
 
   letter-spacing: 0.06em;
   line-height: 1.87;
-  display: flex;
+  /* display: flex; */
   text-align: center;
   align-items: center;
 }
@@ -145,7 +140,16 @@ a {
   display: none;
   }
 
+.our-list {
+    display: flex;
+
+    text-align: left;
+  }
+
 .our-list .titel {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.4;
@@ -153,13 +157,20 @@ a {
 }
 
 .our-list .text-titel {
+  margin-top: 0%;
+  margin-bottom: 0%;
+
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
+ 
 }
 
 /* what we do */
-.section-img .titel {
+.section-img .title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -235,4 +246,11 @@ a {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid teal;
 }
