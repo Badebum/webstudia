@@ -142,7 +142,7 @@ a {
 
 .our-list {
     display: flex;
-
+    padding-bottom: 94px;
     text-align: left;
   }
 
@@ -166,7 +166,12 @@ a {
  
 }
 
-/* what we do */
+/* чем мы занимаемся */
+
+.section-img {
+  padding-bottom: 94px;
+}
+
 .section-img .title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -180,14 +185,24 @@ a {
 .section-img li{
   display: inline-block;
 }
+.section-img .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 /* Наша команда */
 
 .our-team {
+padding-top: 0px;
+padding-bottom: 94px;
+
   background: rgb(245, 244, 250);
 }
 
 .our-team .titel {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -195,12 +210,18 @@ a {
 }
 
 .our-team .titel-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .our-team .titel-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -218,22 +239,38 @@ a {
 
 /* постоянные клиенты */
 .regular-customers {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.regular-customers .titel{
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
 }
 
+
 /* футер */
+
 .section-footer {
   background: rgb(47, 48, 58);
 }
 
 .section-footer .location {
+  margin-top: 0px;
+  margin-bottom: 9px;
+
   color: var(--white-color);
 }
 
 .section-footer .contacts {
+  margin-top: 0px;
+  margin-bottom: 9px;
+
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -241,6 +278,9 @@ a {
 }
 
 .section-footer .text-titel {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   color: var(--white-color);
   font-weight: bold;
   font-size: 14px;
