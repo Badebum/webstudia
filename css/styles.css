@@ -87,8 +87,7 @@ a {
 
 /* HERO */
 .section-hero {
-  background-color: #2f303a;
-  color: var(--white-color);
+  /* color: var(--white-color); */
   text-align: center;
 }
 
@@ -292,5 +291,7 @@ padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid teal;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* outline: 2px solid teal; */
 }
