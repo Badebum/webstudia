@@ -263,22 +263,24 @@ padding-bottom: 94px;
 }
 
 .our-team .titel-name {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .our-team .titel-text {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .soc-link a:hover,
@@ -288,23 +290,28 @@ padding-bottom: 94px;
 
 .soc-link {
   display: flex;
-  flex-direction: row;
-  }
+  justify-content: center;
+}
 
 .our-team .icon{
   display: flex;
   flex-wrap: wrap;
  }
 
- .our-team .item{
+.our-team .item-card{
    width: 270px;
-    }
+   }
 
-.our-team .item:not(:last-child){
+.our-team .item-card:not(:last-child){
   margin-right: 30px;
 }
 
+.our-team .item:not(:last-child){
+  margin-right: 10px;
+}
+
 /* постоянные клиенты */
+
 .regular-customers {
   padding-top: 0px;
   padding-bottom: 94px;
@@ -320,12 +327,16 @@ padding-bottom: 94px;
   text-align: center;
 }
 
-.regular-customers .item {
+.regular-customers .icon {
   display: flex;
-
+  justify-content: space-evenly;
 }
 
-/* футер */
+.regular-customers .item:not(:last-child){
+  margin-right: 30px;
+}
+
+/* ФУТЕР */
 
 .section-footer {
   background: rgb(47, 48, 58);
