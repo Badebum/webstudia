@@ -50,14 +50,18 @@ body {
 
 /* логотип */
 .logo {
-  color: #000000;
+  color: var(--accent-color);
   font-family: Raleway;
   font-weight: 400px;
   font-size: 26px;
   line-height: 1.19;
 }
 .logo .one {
-  color: var(--accent-color);
+  color: #000000;
+}
+
+.logo .two {
+  color:#ffffff;
 }
 
 .page-header{
@@ -299,7 +303,11 @@ padding-bottom: 94px;
  }
 
 .our-team .item-card{
+  background-color: #ffffff;
+
    width: 270px;
+   border-radius: 0 0 5px 5px;
+   box-shadow: 0 4px 4px 0 rgba(0,0,0, 25%);
    }
 
 .our-team .item-card:not(:last-child){
