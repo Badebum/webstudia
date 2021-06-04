@@ -87,15 +87,15 @@
     <ul class="section-img list" >
         <li class="item">
             <img src="./img/our-work/box1.jpg" alt="человек работает за компьютером" Width="370">
-            <p class="text">Десктопные приложения</p>
+            <h3 class="text">Десктопные приложения</h3>
         </li>
         <li class="item">
             <img src="./img/our-work/box2.jpg" alt="человек работает за компьютером" Width="370">
-            <p class="text">Мобильные приложения</p>
+            <h3 class="text">Мобильные приложения</h3>
         </li>
         <li class="item">
             <img src="./img/our-work/box3.jpg" alt="человек работает за компьютером" Width="370">
-            <p class="text">Дизайнерские решения</p>
+            <h3 class="text">Дизайнерские решения</h3>
         </li>
     </ul>
 </div>
@@ -108,17 +108,22 @@
 <ul class="icon list">
     <li class="item-card">
         <img src="./img/our-team/img-0.jpg" alt="" width="270">
-        <h3 class="titel-name">Игорь Демьяненко</h3>
-        <p lang="en" class="titel-text">Product Designer</p>
-        <ul class="soc-link list">
-            <li class="item"><a href=""><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
-            <li class="item"><a href=""><img src="./img/icon/Ellipse3.jpg" alt=""></a></li>
-            <li class="item"><a href=""><img src="./img/icon/Ellipse1.jpg" alt=""></a></li>
-            <li class="item"><a href=""><img src="./img/icon/Ellipse2.jpg" alt=""></a></li>
-        </ul>
+        <div class="card-content">
+            <h3 class="titel-name">Игорь Демьяненко</h3>
+            <p lang="en" class="titel-text">Product Designer</p>
+            <ul class="soc-link list">
+                <li class="item"><a href=""><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
+                <li class="item"><a href=""><img src="./img/icon/Ellipse3.jpg" alt=""></a></li>
+                <li class="item"><a href=""><img src="./img/icon/Ellipse1.jpg" alt=""></a></li>
+                <li class="item"><a href=""><img src="./img/icon/Ellipse2.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        
     </li>
+
     <li class="item-card">
         <img src="./img/our-team/img-1.jpg" alt="" width="270">
+    <div class="card-content">
         <h3 class="titel-name">Ольга Репина</h3>
         <p lang="en" class="titel-text">Frontend Developer</p>
         <ul class="soc-link list ">
@@ -127,9 +132,12 @@
             <li class="item"><a href=""><img src="./img/icon/Ellipse1.jpg" alt=""></a></li>
             <li class="item"><a href=""><img src="./img/icon/Ellipse2.jpg" alt=""></a></li>
         </ul>
+    </div>
     </li>
+
     <li class="item-card">
         <img src="./img/our-team/img-2.jpg" alt="" width="270">
+        <div class="card-content">
         <h3 class="titel-name">Николай Тарасов</h3>
         <p lang="en" class="titel-text">Marketing</p>
         <ul class="soc-link list">
@@ -138,9 +146,12 @@
             <li class="item"><a href=""><img src="./img/icon/Ellipse1.jpg" alt=""></a></li>
             <li class="item"><a href=""><img src="./img/icon/Ellipse2.jpg" alt=""></a></li>
         </ul>
+        </div>
     </li>
+    
     <li class="item-card">
         <img src="./img/our-team/img-3.jpg" alt="" width="270">
+        <div class="card-content">
         <h3 class="titel-name">Михаил Ермаков</h3>
         <p lang="en" class="titel-text">UI Designer</p>
         <ul class="soc-link list">
@@ -149,7 +160,9 @@
             <li class="item"><a href=""><img src="./img/icon/Ellipse1.jpg" alt=""></a></li>
             <li class="item"><a href=""><img src="./img/icon/Ellipse2.jpg" alt=""></a></li>
         </ul>
+        </div>
     </li>
+    
 </ul>
 </div>
 </section>
@@ -186,22 +199,21 @@
 </main>
 
 <Footer class="section-footer">
-  <div class="conteiner">
-    <div >
+  <div class="conteiner footer-item">
+    <div class="footer-address">
         <a href="./index.html" class="logo link">
             Web <span class="two"> Studio </span> 
      </a>
-     <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-<address>
-    <ul class=" list">
-       
-        <li><a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a></li>
+<address class="item-address">
+     <span class="location link">г. Киев, пр-т Леси Украинки, 26</span>
+    <ul class=" list">  
+        <li class="item"><a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a></li>
+        <li"><a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a></li>
     </ul>
 </address>
     </div>
 
-    <div>
+    <div class="footer-soc">
         <p class="text-titel"> Присоединяйтесь</p>
         <ul class="icon list" >
             <li><a href=""><img src="./img/icon/Ellipse.jpg" alt=""></a></li>
@@ -211,8 +223,9 @@
         </ul>
         
     </div>
-    <div>
-        <h2>Подпишитесь на рассылку</h2>
+    <div class="footer-sub">
+        <p>Подпишитесь на рассылку</p>
+        <img src="./img/icon/Ellipse.jpg" alt="">
     </div>
 </div>
 </Footer>

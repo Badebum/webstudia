@@ -62,10 +62,11 @@ body {
 
 .logo .two {
   color:#ffffff;
-}
+ }
 
 .page-header{
    background-color: var(--white-color);
+   border-bottom: 1px solid #ECECEC;
 }
 
 /* nav */
@@ -245,13 +246,23 @@ body {
 .section-img .text {
   margin-top: 0px;
   margin-bottom: 0px;
+background-color: #000000;
+
+font-weight: bold;
+font-size: 14px;
+line-height: 1.4;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
 }
 
 /* Наша команда */
 
 .our-team {
-padding-top: 0px;
-padding-bottom: 94px;
+  padding-top: 0px;
+  padding-bottom: 94px;
 
   background: rgb(245, 244, 250);
 }
@@ -326,7 +337,7 @@ padding-bottom: 94px;
 }
 
 .regular-customers .titel{
-  margin-top: 0px;
+  margin-top: 94px;
   margin-bottom: 50px;
 
   font-weight: bold;
@@ -347,20 +358,34 @@ padding-bottom: 94px;
 /* ФУТЕР */
 
 .section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background: rgb(47, 48, 58);
 }
 
-.section-footer .location {
-  margin-top: 0px;
-  margin-bottom: 9px;
+.footer-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 
-  color: var(--white-color);
+}
+
+.item-address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.item-address .item{
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.item-address .location {
+   color: var(--white-color);
 }
 
 .section-footer .contacts {
-  margin-top: 0px;
-  margin-bottom: 9px;
-
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -369,7 +394,7 @@ padding-bottom: 94px;
 
 .section-footer .text-titel {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 
   color: var(--white-color);
   font-weight: bold;
@@ -378,3 +403,19 @@ padding-bottom: 94px;
   text-transform: uppercase;
 }
 
+.footer-soc .icon {
+  display: flex;
+}
+
+.footer-sub {
+margin-bottom: 20px;
+
+  color: var(--white-color);
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
