@@ -247,7 +247,6 @@ body {
 .our-list .item {
   display: block;
   width: 270px;
-
 }
 
 
@@ -482,7 +481,7 @@ color: #FFFFFF;
  .icon-client{
   width: 170px;
   height: 90px;
-  padding: 20px 40px;
+  padding: 23px 0px;
  }
 
 .icon-client:hover,
@@ -539,8 +538,8 @@ color: #FFFFFF;
   text-transform: uppercase;
 }
 
-.footer-soc .icon {
-  display: flex;
+.footer-soc .item.item:not(:last-child){
+  margin-right: 10px;
 }
 
 .footer-sub {
@@ -554,4 +553,15 @@ margin-bottom: 20px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer-soc .link-item{
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+}
+.footer-soc .icon-soc{
+  fill: var(--white-color);
+}
+.footer-soc .link-item:hover{
+  background-color: var(--accent-color);
 }
