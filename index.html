@@ -56,7 +56,7 @@
     <!-- HERO -->
     <section class="section-hero">
         <h1 class="titel">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button hero"> Заказать услугу </button>
+        <button type="button" class="button hero" data-modal-open> Заказать услугу </button>
       
     </section>
 
@@ -424,11 +424,23 @@
     </div>
 </div>
 </Footer>
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <p>Оставьте свои данные, мы вам перезвоним</p>
-        <button> Закрыть </button>
+        <button data-modal-close> Закрыть </button>
     </div>
 </div>
+<script>const refs = {
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
+    };
+
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+    }</script>
 </body>
 </html>
