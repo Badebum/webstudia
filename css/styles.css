@@ -705,10 +705,112 @@ body {
   color: #fff;
 }
 
+.text-area {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
 
-.user-form{
-  display: flex;
-  flex-direction: column;
-  
+  color: #757575;
 
+  position: relative;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0%;
+  padding: 10px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  position: relative;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  color: #757575;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-input {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: var(--accent-color);
+  transform: translateY(-40px) translateX(-26px);
+}
+
+.form-input:focus ~ .icon-input {
+  fill: var(--accent-color);
+}
+
+.form-input:focus {
+  border: 1px solid #2196f3;
+}
+
+.text-area-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #757575;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-area:focus + .text-area-label,
+.text-area:not(:placeholder-shown) + .text-area-label {
+  color: var(--accent-color);
+  transform: translateY(-31px);
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-label {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.icon-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-color);
+  background-image: url(../img/icon/icon-check.svg);
+  background-size: contain;
+  background-origin: content-box;
+  border: var(--accent-color);
 }
