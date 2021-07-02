@@ -1,0 +1,86 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link.current {
+  position: relative;
+  color: $accent-color;
+}
+
+
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.icon-address {
+  margin-right: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav .icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: rgba(117, 117, 117, 1);
+}
+
+.auth-nav .icon-smartphone {
+  width: 10px;
+  height: 15px;
+  fill: rgba(117, 117, 117, 1);
+}
+
+.auth-nav .link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  color: rgba(117, 117, 117, 1);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: $accent-color;
+}
+
+.mail-link:hover .icon-address,
+.mail-link:focus .icon-address {
+  fill: $accent-color;
+  color: $accent-color;
+}

@@ -1,0 +1,18 @@
+.button:hover,
+.button:focus {
+  color: $white-color;
+  background-color: $accent-color;
+}
+
+.button-card {
+  margin-bottom: 34px;
+}
+
+.button-card .navigation-button {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-button .item:not(:last-child) {
+  margin-right: 8px;
+}
