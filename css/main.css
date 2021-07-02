@@ -347,6 +347,7 @@ body {
 }
 
 .section-hero {
+  position: relative;
   color: white;
   text-align: center;
   max-width: 1600px;
@@ -359,7 +360,15 @@ body {
   background-size: cover;
 }
 
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .section-hero .titel {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -656,6 +665,7 @@ body {
 .item-address {
   margin-top: 20px;
   font-style: normal;
+  margin-right: 49px;
 }
 
 .item-address .item {
@@ -684,19 +694,12 @@ body {
   text-transform: uppercase;
 }
 
-.footer-soc .item.item:not(:last-child) {
-  margin-right: 10px;
+.footer-soc {
+  margin-right: 94px;
 }
 
-.footer-sub {
-  margin-bottom: 20px;
-  color: white;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.footer-soc .item.item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-soc .link-item {
@@ -711,5 +714,46 @@ body {
 
 .footer-soc .link-item:hover {
   background-color: #2196f3;
+}
+
+.footer-sub {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.sub-input {
+  position: relative;
+}
+
+.sub-form-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.submit-btn {
+  text-align: unset;
+  padding-left: 29px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-sub-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 13px;
+  right: 28px;
 }
 /*# sourceMappingURL=main.css.map */

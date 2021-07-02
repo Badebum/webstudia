@@ -14,6 +14,8 @@
 .item-address {
   margin-top: 20px;
   font-style: normal;
+
+  margin-right: 49px;
 }
 
 .item-address .item {
@@ -43,21 +45,12 @@
   text-transform: uppercase;
 }
 
-.footer-soc .item.item:not(:last-child) {
-  margin-right: 10px;
+.footer-soc{
+  margin-right: 94px;
 }
 
-.footer-sub {
-  margin-bottom: 20px;
-
-  color: $white-color;
-  font-family: Roboto;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.footer-soc .item.item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-soc .link-item {
@@ -73,4 +66,55 @@
 
 .footer-soc .link-item:hover {
   background-color: $accent-color;
+}
+
+.footer-sub {
+  color: $white-color;
+  
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.sub-input{
+  position: relative;
+
+}
+
+.sub-form-input {
+  width: 358px;
+  height: 50px;
+  margin-right:  12px;
+  padding-left: 16px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color:transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+
+
+.submit-btn{
+  text-align:unset;
+  padding-left: 29px;
+
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ 
+ }
+
+.icon-sub-btn{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+
+  top: 13px;
+  right: 28px;
 }
