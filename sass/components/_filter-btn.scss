@@ -6,11 +6,11 @@
 
 .button-card {
   margin-bottom: 34px;
-}
 
-.button-card .navigation-button {
-  display: flex;
-  justify-content: center;
+  & .navigation-button {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .navigation-button .item:not(:last-child) {

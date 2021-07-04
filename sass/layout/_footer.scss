@@ -3,6 +3,24 @@
   padding-bottom: 60px;
 
   background: rgb(47, 48, 58);
+
+  & .contacts {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+  }
+
+  & .text-titel {
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    color: $white-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 }
 
 .footer-item {
@@ -14,63 +32,44 @@
 .item-address {
   margin-top: 20px;
   font-style: normal;
-
   margin-right: 49px;
+
+  & .item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+
+  & .location {
+    color: $white-color;
+  }
 }
 
-.item-address .item {
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-
-.item-address .location {
-  color: $white-color;
-}
-
-.section-footer .contacts {
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-}
-
-.section-footer .text-titel {
-  margin-top: 0px;
-  margin-bottom: 20px;
-
-  color: $white-color;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.footer-soc{
+.footer-soc {
   margin-right: 94px;
-}
 
-.footer-soc .item.item:not(:last-child) {
-  margin-right: 10px;
-}
+  & .item.item:not(:last-child) {
+    margin-right: 10px;
+  }
 
-.footer-soc .link-item {
-  background: rgba(255, 255, 255, 0.1);
-  margin-bottom: 0;
+  & .link-item {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 0;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.footer-soc .icon-soc {
-  fill: $white-color;
-}
+  & .icon-soc {
+    fill: $white-color;
+  }
 
-.footer-soc .link-item:hover {
-  background-color: $accent-color;
+  & .link-item:hover {
+    background-color: $accent-color;
+  }
 }
 
 .footer-sub {
   color: $white-color;
-  
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -78,20 +77,19 @@
   text-transform: uppercase;
 }
 
-.sub-input{
+.sub-input {
   position: relative;
-
 }
 
 .sub-form-input {
   width: 358px;
   height: 50px;
-  margin-right:  12px;
+  margin-right: 12px;
   padding-left: 16px;
 
   color: rgba(255, 255, 255, 0.6);
 
-  background-color:transparent;
+  background-color: transparent;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -99,22 +97,33 @@
   border-radius: 4px;
 }
 
-
-
-.submit-btn{
-  text-align:unset;
-  padding-left: 29px;
-
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
- 
- }
-
-.icon-sub-btn{
+.icon-sub-btn {
   position: absolute;
   width: 24px;
   height: 24px;
 
   top: 13px;
   right: 28px;
+}
+
+.subscribe-btn {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #2196f3;
+
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: $white-color;
+
+  text-align: unset;
+  padding-left: 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

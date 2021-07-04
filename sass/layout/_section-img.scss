@@ -1,14 +1,14 @@
 .section-img-list {
   display: flex;
   padding-bottom: 94px;
+
+  & .item {
+    width: 370px;
+  }
 }
 
 .section-img-list .item:not(:last-child) {
   margin-right: 30px;
-}
-
-.section-img-list .item {
-  width: 370px;
 }
 
 .section-img .title {

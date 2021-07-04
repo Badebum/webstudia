@@ -4,11 +4,12 @@
   font-weight: 400px;
   font-size: 26px;
   line-height: 1.19;
-}
-.logo .one {
-  color: #000000;
-}
 
-.logo .two {
-  color: $white-color;
+  & .one {
+    color: #000000;
+  }
+
+  & .two {
+    color: $white-color;
+  }
 }
