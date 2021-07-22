@@ -1,16 +1,17 @@
 .our-list {
-  display: flex;
-  padding-bottom: 94px;
-  text-align: left;
+  // display: flex;
+  padding-bottom: 60px;
+//   text-align: center;
 }
 
-.our-list .item:not(:last-child) {
-  margin-right: 30px;
-}
+// .our-list .item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .our-list .item {
   display: block;
-  width: 270px;
+  width: 450px;
+  padding-bottom: 30px;
 }
 
 .our-list .icon-list {
@@ -22,37 +23,9 @@
   margin-bottom: 30px;
 }
 
-/* .our-list .item::before{
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  background-color: rgba(245, 244, 250, 1);
-  margin-bottom: 30px;
- 
-  }
-
-.our-list .icon-satellite::before{
-  background-image: url(../img/our-values/antenna.svg);
- }
-
- .our-list .icon-cloc::before{
-  background-image: url(../img/our-values/clock.svg);
- }
-
- .our-list .icon-diagram::before{
-  background-image: url(../img/our-values/diagram.svg);
- }
-
- .our-list .icon-astronaut::before{
-  background-image: url(../img/our-values/astronaut.svg);
- } */
-
 .our-list .icon-our-list {
   display: block;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   padding: 25px 100px;
@@ -66,8 +39,9 @@
 
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .our-list .text-titel {
@@ -77,4 +51,5 @@
   color: $secondary-text-color;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
