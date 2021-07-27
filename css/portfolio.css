@@ -66,9 +66,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .container {
-    width: 1200px;
+    width: 1170px;
   }
 }
 
@@ -145,6 +145,7 @@ body {
 }
 
 .site-nav .link.current {
+  position: relative;
   color: #2196f3;
 }
 
@@ -341,6 +342,7 @@ body {
 }
 
 .section-footer {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
@@ -363,19 +365,31 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1170px) {
+  .section-footer {
+    text-align: start;
+  }
+}
+
 .item-address {
   margin-top: 20px;
+  margin-bottom: 60px;
   font-style: normal;
-  margin-right: 49px;
 }
 
 .item-address .item {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .item-address .location {
   color: white;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-address {
+  margin-right: 69px;
 }
 
 .footer-soc {
@@ -409,12 +423,20 @@ body {
   text-transform: uppercase;
 }
 
-.sub-input {
-  position: relative;
+.footer-sub p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1170px) {
+  .sub-input {
+    display: flex;
+  }
 }
 
 .sub-form-input {
-  width: 358px;
+  margin-bottom: 20px;
+  width: 450px;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -426,15 +448,14 @@ body {
   border-radius: 4px;
 }
 
-.icon-sub-btn {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 13px;
-  right: 28px;
+@media screen and (min-width: 1170px) {
+  .sub-form-input {
+    width: 358px;
+  }
 }
 
 .subscribe-btn {
+  position: relative;
   width: 200px;
   height: 50px;
   margin: 0 auto;
@@ -447,8 +468,34 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: white;
-  text-align: unset;
+  text-align: start;
   padding-left: 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.icon-sub-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 13px;
+  right: 28px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .footer-item {
+    display: flex;
+    align-items: baseline;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

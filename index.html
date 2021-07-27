@@ -149,13 +149,13 @@
                 <h2 class="titel">Наша команда</h2>
                 <ul class="card list">
                     <li class="item-card">
-                        <img src="./img/our-team/img-0.jpg" alt="" width="450">
+                        <img src="./img/our-team/img-0.jpg" alt="" class="team-img">
                         <div class="card-content">
                             <h3 class="titel-name">Игорь Демьяненко</h3>
                             <p lang="en" class="titel-text">Product Designer</p>
+                            
                             <ul class="soc-link list">
                                 <li class="item">
-
                                     <a href="" class="link-item">
                                         <svg class="icon-soc">
                                             <use href="./img/icon/symbol-defs.svg#instagram">
@@ -193,7 +193,7 @@
                     </li>
 
                     <li class="item-card">
-                        <img src="./img/our-team/img-1.jpg" alt="" width="450">
+                        <img src="./img/our-team/img-1.jpg" alt="" class="team-img" >
                         <div class="card-content">
                             <h3 class="titel-name">Ольга Репина</h3>
                             <p lang="en" class="titel-text">Frontend Developer</p>
@@ -235,7 +235,7 @@
                     </li>
 
                     <li class="item-card">
-                        <img src="./img/our-team/img-2.jpg" alt="" width="450">
+                        <img src="./img/our-team/img-2.jpg" alt="" class="team-img">
                         <div class="card-content">
                             <h3 class="titel-name">Николай Тарасов</h3>
                             <p lang="en" class="titel-text">Marketing</p>
@@ -277,7 +277,7 @@
                     </li>
 
                     <li class="item-card">
-                        <img src="./img/our-team/img-3.jpg" alt="" width="450">
+                        <img src="./img/our-team/img-3.jpg" alt="" class="team-img">
                         <div class="card-content">
                             <h3 class="titel-name">Михаил Ермаков</h3>
                             <p lang="en" class="titel-text">UI Designer</p>
@@ -432,6 +432,7 @@
                 </ul>
 
             </div>
+
             <div class="footer-sub">
                 <p>Подпишитесь на рассылку</p>
                 <div class="sub-input">
@@ -439,16 +440,20 @@
                     <label for="email" class="sub-form-label">
                         <input type="email" class="sub-form-input" name="sub-email" placeholder="E-mail">
                         </label>
-                    <button type="submit" class="subscribe-btn"> Подписатся </button>
-                    <svg class="icon-sub-btn" >
+                    <button type="submit" class="subscribe-btn"> Подписаться 
+                        <svg class="icon-sub-btn">
                         <use href="./img/icon/symbol-defs.svg#telegram">
                         </use>
-                    </svg> 
+                    </svg> </button>
+                    
                 </div>
             </div>
         </div>
     </Footer>
     
+
+<!-- MODAL -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-btn" data-modal-close>

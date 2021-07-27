@@ -1,48 +1,61 @@
 .regular-customers {
-  padding-top: 0px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .regular-customers .titel {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.7;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
+}
+
+.card-clients .item {
+  margin: 15px;
 }
 
 // .regular-customers .icon {
 //   display: flex;
-//   justify-content: space-evenly;
 // }
 
-.regular-customers .item:not(:last-child) {
-  margin-right: 30px;
+.card-clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (min-width: 1170px) {
+    flex-wrap: nowrap;
+  }
 }
-
-// .card-clients {
-//   display: flex;
-// }
 
 .link-client {
   display: block;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border-radius: 4px;
   border: 1px solid rgb(175, 177, 184);
   fill: #afb1b8;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1170px) {
+    width: 170px;
+  }
 }
 
 .icon-client {
-  width: 170px;
+  width: 210px;
   height: 90px;
-  padding: 23px 0px;
+  padding: 18px 0px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1170px) {
+    width: 170px;
+  }
 }
 
 .icon-client:hover,
