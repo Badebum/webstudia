@@ -20,6 +20,12 @@ body {
 }
 
 .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
   background-color: $white-color;
   border-bottom: 1px solid #ececec;
 }
@@ -29,8 +35,10 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+
   width: 100%;
   height: 4px;
+
   border-radius: 2px;
   background-color: $accent-color;
 }
