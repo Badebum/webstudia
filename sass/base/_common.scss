@@ -5,6 +5,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .list {
   padding: 0px;
   margin: 0px;
@@ -28,6 +32,10 @@ body {
 
   background-color: $white-color;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 1170px) {
+    justify-content: start;
+  }
 }
 
 .activ::after {
