@@ -21,6 +21,19 @@ body.modal-open {
 
 .img-block {
   display: block;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 370px;
+  }
 }
 
 .page-header {
